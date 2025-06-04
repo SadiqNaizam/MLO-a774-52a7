@@ -4,89 +4,85 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 96.1%; /* #F5F5F5 */
+    --foreground: 0 0% 20%; /* #333333 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 96.1%; /* #F5F5F5 */
+    --card-foreground: 0 0% 20%; /* #333333 */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 96.1%; /* #F5F5F5 */
+    --popover-foreground: 0 0% 20%; /* #333333 */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 174.1 100% 23.7%; /* #00796B */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 206.7 14.3% 93.9%; /* #ECEFF1 */
+    --secondary-foreground: 0 0% 20%; /* #333333 */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 202.5 16.1% 83.3%; /* #CFD8DC */
+    --muted-foreground: 0 0% 45.9%; /* #757575 */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 44.9 100% 51.4%; /* #FFC107 */
+    --accent-foreground: 0 0% 20%; /* #333333 */
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 87.8%; /* #E0E0E0 */
+    --input: 0 0% 87.8%; /* #E0E0E0 */
+    --ring: 44.9 100% 51.4%; /* #FFC107 - Accent Color */
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* 12px */
 
-    --sidebar-background: 0 0% 98%;
+    --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 174 30% 96%; /* Very Light Teal */
+    --sidebar-foreground: 0 0% 20%;   /* Dark Gray */
+    --sidebar-primary: 174.1 100% 23.7%; /* Main Primary Teal */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 44.9 100% 51.4%;    /* Main Accent Amber */
+    --sidebar-accent-foreground: 0 0% 20%;   /* Dark Gray */
+    --sidebar-border: 174 20% 90%;      /* Light Teal Gray */
+    --sidebar-ring: 44.9 100% 51.4%;     /* Main Accent Amber */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 7.1%; /* #121212 */
+    --foreground: 0 0% 87.8%; /* #E0E0E0 */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 7.1%; /* #121212 */
+    --card-foreground: 0 0% 87.8%; /* #E0E0E0 */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 7.1%; /* #121212 */
+    --popover-foreground: 0 0% 87.8%; /* #E0E0E0 */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 174.3 100% 15.1%; /* #004D40 - Darker Teal BG */
+    --primary-foreground: 174 38.9% 85.1%; /* #B2DFDB - Light Teal FG */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 12.9%; /* #212121 */
+    --secondary-foreground: 0 0% 74.1%; /* #BDBDBD */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 0 0% 12.9%; /* #212121 */
+    --muted-foreground: 0 0% 45.9%; /* #757575 */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 42 100% 50%; /* #FFB300 - Darker Amber BG */
+    --accent-foreground: 0 0% 0%; /* #000000 - Black FG */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72.2% 50.6%; /* Adjusted for dark, e.g. #FF5252 */
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 0 0% 25.9%; /* #424242 */
+    --input: 0 0% 25.9%; /* #424242 */
+    --ring: 42 100% 50%; /* #FFB300 - Dark Accent Color */
+
+    --sidebar-background: 174 20% 10%;      /* Dark Teal Gray */
+    --sidebar-foreground: 0 0% 87.8%;     /* Light Gray */
+    --sidebar-primary: 174.3 100% 15.1%;   /* Dark Primary Teal */
+    --sidebar-primary-foreground: 174 38.9% 85.1%; /* Light Teal FG for Dark Primary */
+    --sidebar-accent: 42 100% 50%;        /* Dark Accent Amber */
+    --sidebar-accent-foreground: 0 0% 0%;       /* Black */
+    --sidebar-border: 174 15% 15%;        /* Darker Teal Gray Border */
+    --sidebar-ring: 42 100% 50%;         /* Dark Accent Amber */
   }
 }
 
@@ -97,5 +93,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
   }
 }
